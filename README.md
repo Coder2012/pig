@@ -1,44 +1,52 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# PIG
 
-In the project directory, you can run:
+This is a small game I built for a technical test, this was built using:
 
-### `npm start`
+* Create react app
+* React
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![alt text](https://github.com/Coder2012/rock-paper-scissors/blob/master/screenshots/rpc.png "Rock Paper Scissors screenshot")
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### View the [demo](https://coder2012.github.io/rock-paper-scissors/dist/)
 
-### `npm test`
+>Warning: Make sure you're using the latest version of Node.js and NPM
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Quick start
 
-### `npm run build`
+> Clone/Download the repo then:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# clone the repo
+$ git clone https://github.com/Coder2012/rock-paper-scissors.git my-app
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# change directory to your app
+$ cd my-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# install the dependencies with npm
+$ npm install
 
-### `npm run eject`
+# start the server
+$ npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+go to [http://localhost:8080](http://localhost:8080) in your browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Developing
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Build files
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* single run: `npm run build`
+* build files and watch: `npm start`
 
-## Learn More
+## Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 1. Unit Tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* single run: `npm test`
+* live mode (TDD style): `npm run test-watch`
+
+# License
+
+[MIT](/LICENSE)
