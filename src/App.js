@@ -118,7 +118,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header>
           <div className="players">
             {this.state.players.map((player) =>
               <Player key={player.id} name={player.name} score={player.score} active={this.state.turn === player.id} />
