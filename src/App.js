@@ -35,24 +35,24 @@ class App extends Component {
   }
 
   updateScores() {
-    console.log('now update the scores for player', this.state.players[this.state.turn].name)
+    // console.log('now update the scores for player', this.state.players[this.state.turn].name)
     switch (true) {
       case this.hasThrownMultipleOnes(): {
-        console.log('has thrown both ones', this.hasThrownMultipleOnes())
+        // console.log('has thrown both ones', this.hasThrownMultipleOnes())
         this.resetCurrentScore()
         this.resetPlayerScore(this.state.turn, 0)
         break
       }
 
       case this.hasThrownOne(): {
-        console.log('has thrown a one', this.hasThrownOne())
+        // console.log('has thrown a one', this.hasThrownOne())
         this.resetCurrentScore()
         this.changePlayers()
         break
       }
 
       default: {
-        console.log('keep adding up for player', this.state.players[this.state.turn].name)
+        // console.log('keep adding up for player', this.state.players[this.state.turn].name)
         this.updateCurrentScore(this.state.dice.reduce((a, b) => a + b, 0))
       }
     }
@@ -107,7 +107,7 @@ class App extends Component {
     this.setState(prevState => {
       return { turn: prevState.turn === 0 ? 1 : 0 }
     }, () => {
-      console.log(this.state.turn)
+      // console.log(this.state.turn)
     });
   }
 
@@ -129,8 +129,8 @@ class App extends Component {
         <section>
           {!this.state.gameOver &&
             <section>
-              <button className="button" type="button" onClick={this.rollButtonHandler}>Roll</button>
-              <button className="button" type="button" onClick={this.passButtonHandler}>Pass</button>
+              <button data-test="test-roll-button" className="button" type="button" onClick={this.rollButtonHandler}>Roll</button>
+              <button data-test="test-pass-button" className="button" type="button" onClick={this.passButtonHandler}>Pass</button>
             </section>
           }
           {this.state.gameOver &&
