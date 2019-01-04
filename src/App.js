@@ -121,7 +121,7 @@ class App extends Component {
         <header>
           <div className="players">
             {this.state.players.map((player) =>
-              <Player key={player.id} name={player.name} score={player.score} active={this.state.turn === player.id} />
+              <Player key={player.id} id={player.id} name={player.name} score={player.score} active={this.state.turn === player.id} />
             )}
           </div>
           <h3>Current score: {this.state.currentScore}</h3>

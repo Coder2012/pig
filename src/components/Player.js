@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Player = ({ name, score, active }) => {
+const Player = ({ id, name, score, active }) => {
     return (
         <section className={active ? 'player active' : 'player'}>
-            <h2>{ name }: <span>{ score }</span></h2>
+            <h2>{ name }: <span className={`player-${id}`}>{ score }</span></h2>
         </section>
     )
 }

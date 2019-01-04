@@ -25,16 +25,14 @@ it('Current score starts at 0', () => {
   expect(currentScore).toBe(0);
 });
 
-it('CurrentScore should be added to player score on pass', () => {
+it('Should swap player index after pass button clicked', () => {
   const wrapper = setup();
-  const player = wrapper.state().players[0];
-  const initialPlayerScore = 10;//player.score;
-  console.log('player score', player.score);
+  const player1Id = wrapper.state().players[0].id;
+  const player2Id = wrapper.state().players[1].id;
   
-  wrapper.find('[data-test="test-roll-button"]').simulate('click');
-  const currentScore = wrapper.state('currentScore');
-
   wrapper.find('[data-test="test-pass-button"]').simulate('click');
-  
-  expect(initialPlayerScore + currentScore).toBe(wrapper.state().players[0].score);
+
+  const currentPlayerId = wrapper.state().turn;
+
+  expect(currentPlayerId).toBe(player2Id);
 });
