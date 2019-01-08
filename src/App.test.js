@@ -27,7 +27,6 @@ it('Current score starts at 0', () => {
 
 it('Should swap player index after pass button clicked', () => {
   const wrapper = setup();
-  const player1Id = wrapper.state().players[0].id;
   const player2Id = wrapper.state().players[1].id;
   
   wrapper.find('[data-test="test-pass-button"]').simulate('click');
