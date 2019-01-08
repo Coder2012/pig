@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TweenLite } from "gsap";
+import { cloneDeep } from "lodash";
 import "./App.css";
 import Dice from "./components/Dice";
 import Player from "./components/Player";
@@ -8,7 +8,7 @@ class App extends Component {
   constructor() {
     super();
 
-    this.state = {
+    this.initialState = {
       dice: [6, 6],
       players: [
         { id: 0, name: "Player One", score: 0 },
@@ -20,8 +20,19 @@ class App extends Component {
       hideUI: false
     };
 
+    this.state = this.initialState;
+
     this.rollButtonHandler = this.rollButtonHandler.bind(this);
     this.passButtonHandler = this.passButtonHandler.bind(this);
+    this.resetButtonHandler = this.resetButtonHandler.bind(this);
+  }
+
+  getInitialState() {
+    return cloneDeep(this.initialState);
+  }
+
+  resetButtonHandler() {
+    this.setState(this.getInitialState());
   }
 
   rollButtonHandler(event) {
@@ -36,7 +47,7 @@ class App extends Component {
   }
 
   passButtonHandler(event) {
-    this.updatePlayerScore(this.state.turn, this.state.currentScore);
+    this.updatePlayerScore(this.state.turn, this.state.currentScore)
   }
 
   async updateScores() {
@@ -66,23 +77,23 @@ class App extends Component {
   }
 
   resetCurrentScore() {
-    this.setState({ currentScore: 0 })
+    this.setState({ currentScore: 0 });
   }
 
   disableUI() {
     return new Promise(resolve => {
       this.setState(
         prevState => {
-          return { hideUI: true }
+          return { hideUI: true };
         },
         () => {
           setTimeout(() => {
-            this.setState({ hideUI: false })
-            resolve("resolve")
-          }, 2000);
+            this.setState({ hideUI: false });
+            resolve("resolve");
+          }, 1000);
         }
-      )
-    })
+      );
+    });
   }
 
   updateCurrentScore(value) {
@@ -193,9 +204,19 @@ class App extends Component {
             </section>
           )}
           {this.state.gameOver && (
-            <p className="status">
-              The winner is {this.state.players[this.state.turn].name}
-            </p>
+            <section>
+              <p className="status">
+                The winner is {this.state.players[this.state.turn].name}
+              </p>
+              <button
+                data-test="test-reset-button"
+                className="button"
+                type="button"
+                onClick={this.resetButtonHandler}
+              >
+                START GAME
+              </button>
+            </section>
           )}
           <section className="dice">
             {this.state.dice.map((die, i) => (
