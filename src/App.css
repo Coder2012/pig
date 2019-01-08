@@ -7,6 +7,7 @@
 .dice {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .player {
@@ -18,18 +19,36 @@
   color: green;
 }
 
+.score {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .button {
   background-color: #333;
   border: none;
   color: antiquewhite;
   font-size: 18px;
-  margin: 20px 8px;
+  margin: 0 8px;
   min-width: 100px;
   padding: 8px;
   border-radius: 10px;
 }
 
+.panel {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 88px;
+}
+
+.warning path {
+  fill: red;
+}
+
 .status {
-  color: green;
-  font-size: 20px;
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
 }
