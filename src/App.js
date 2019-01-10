@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { cloneDeep } from "lodash";
-import "./App.css";
+import "./styles/App.css";
 import Dice from "./components/Dice";
 import Player from "./components/Player";
 
