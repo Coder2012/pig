@@ -15,19 +15,27 @@ This is a small game I built for a technical test, this was built using:
 
 ```bash
 # clone the repo
-$ git clone https://github.com/Coder2012/pig.git pig
+git clone https://github.com/Coder2012/pig.git pig
 
 # change directory to your app
-$ cd pig
+cd pig
 
 # install the dependencies with npm
-$ npm install
+npm install
 
 # start the server
-$ npm start
-```
+npm start
 
 go to [http://localhost:3000](http://localhost:3000) in your browser.
+```
+
+### Running tests
+
+```
+npm test
+
+NOTE: Puppeteer is used for E2E testing, currently this may fail the first time, just run the tests again!
+```
 
 ## Developing
 
