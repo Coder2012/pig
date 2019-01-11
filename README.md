@@ -7,7 +7,7 @@ This is a small game I built for a technical test, this was built using:
 * Create react app
 * React
 
-![alt text](https://github.com/Coder2012/pig/blob/master/screenshots/pig_game.png "PIG screenshot")
+![alt text](https://github.com/Coder2012/pig/blob/master/screenshots/pig_game_mobile.png "PIG screenshot")
 
 ### Quick start
 
