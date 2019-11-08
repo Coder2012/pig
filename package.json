@@ -31,7 +31,7 @@
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "gsap": "^2.0.2",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.13"
   },
   "snyk": true
 }
