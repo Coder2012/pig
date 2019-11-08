@@ -170,3 +170,51 @@ patch:
   SNYK-JS-LODASH-450202:
     - react-scripts > html-webpack-plugin > lodash:
         patched: '2019-11-08T21:50:48.670Z'
+    - babel-core > babel-template > babel-traverse > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-types > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-generator > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-traverse > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-template > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-generator > babel-types > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-traverse > babel-types > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-register > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-helpers > babel-template > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-template > babel-types > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-helpers > babel-template > babel-types > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-11-08T22:08:51.252Z'
