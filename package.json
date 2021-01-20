@@ -27,7 +27,7 @@
   "devDependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
-    "gsap": "^3.0.1",
+    "gsap": "^3.6.0",
     "lodash": "^4.17.15"
   }
 }
